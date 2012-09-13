@@ -1,0 +1,17 @@
+NAME="eve"
+VERSION=0.1.0.69658
+RELEASE=1
+CATEGORY="Web"
+SUMMARY="Enlightenment web browser"
+DESCRIPTION="Eve is a web browser based on the EFL and ​EWebKit, aimed primarily
+to be used on mobile devices with touch screens -- but it works like a charm on
+the desktop, too."
+HOMEPAGE="http://www.enlightenment.org/"
+PATCH_URI="01-no-undefined.patch"
+SVN_URI="http://svn.enlightenment.org/svn/e"
+SVN_BRANCH="trunk/${NAME}"
+SVN_REV=${PV[4]}
+SVN_MODULE=${SVN_BRANCH##*/}
+inherit svn
+
+KEEP_LA_FILES="none"
